@@ -45,6 +45,13 @@
   background-color: #4F57AA; }
   #contact h2 {
     color: #fff; }
+  #contact ul {
+    list-style-type: none; }
+  #contact li {
+    display: inline-block; }
+  #contact i {
+    color: white;
+    font-size: 34px; }
 
 @media (max-width: 354.98px) {
   .navbar-brand h1 {

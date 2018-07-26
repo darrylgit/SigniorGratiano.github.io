@@ -12,7 +12,7 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-light fixed-top py-1" id="main-nav">
     <div class="container">
-      <a href="http://yahoo.com" class="navbar-brand">
+      <a href="#about" class="navbar-brand">
         <h1 class="h2">Daniel Wagener</h1>
       </a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -45,7 +45,7 @@
               web development through the Free Code Camp Curriculum. Feel free to check
               out what I've made below and drop me a line.</p>
             <div class="row">
-              <a href="#" class="btn btn-danger mx-auto mt-3">
+              <a href="#" class="btn btn-danger mx-auto mt-3" data-toggle="modal" data-target="#contactModal">
                 Contact Now
               </a>
             </div>
@@ -183,11 +183,66 @@
         <div class="col mx-auto">
           <h2 class="display-4">Contact</h2>
           <p>Email me at daniel.j.wagener@gmail.com <br> Or, </p>
-          <a href="#" class="btn btn-danger">Send Message</a>
+          <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#contactModal">Send Message</a>
+          <ul class="mt-3">
+            <li>
+              <a href="https://github.com/SigniorGratiano">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@SigniorGratiano">
+                <i class="fab fa-medium"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/dnwagener">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/dnwagener/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal fade text-dark" id="contactModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="Name">Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" rows="4"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger btn-block" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script

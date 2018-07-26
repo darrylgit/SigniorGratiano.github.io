@@ -81,6 +81,16 @@ $windy-day: #4F57AA;
     color: #fff;
   }
 
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+  }
+  i {
+    color: white;
+    font-size: 34px
+  }
 }
 
 
