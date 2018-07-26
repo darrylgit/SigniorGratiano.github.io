@@ -26,7 +26,8 @@
     border-radius: 5px;
     border: 2px #72818B solid; }
   #about p {
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 1.5em; }
 
 #portfolio h2 {
   color: #454857; }
@@ -34,7 +35,7 @@
   border-radius: 5px;
   border: 1px #72818B solid; }
 #portfolio i {
-  font-size: 24px; }
+  font-size: 32px; }
 #portfolio i:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -42,16 +43,30 @@
   -o-transform: scale(1.2); }
 
 #contact {
-  background-color: #4F57AA; }
+  background-color: #454857; }
   #contact h2 {
     color: #fff; }
+  #contact p, #contact .btn {
+    font-size: 1.5em; }
+  #contact #email-me {
+    color: white;
+    text-decoration: underline; }
+  #contact ul, #contact li {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline; }
   #contact ul {
     list-style-type: none; }
-  #contact li {
-    display: inline-block; }
-  #contact i {
-    color: white;
-    font-size: 34px; }
+    #contact ul li {
+      display: inline-block; }
+      #contact ul li i {
+        color: white;
+        font-size: 48px; }
+      #contact ul li i:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2); }
 
 @media (max-width: 354.98px) {
   .navbar-brand h1 {
@@ -62,5 +77,3 @@
 @media (max-width: 767.98px) {
   #about {
     text-align: center; } }
-
-/*# sourceMappingURL=style.css.map */

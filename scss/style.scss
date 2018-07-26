@@ -47,6 +47,7 @@ $windy-day: #4F57AA;
 
   p {
     font-weight: 400;
+    font-size: 1.5em;
     //background-color: rgba(266, 266, 266, 0.5);
     //padding: 5px;
   }
@@ -63,7 +64,7 @@ $windy-day: #4F57AA;
   }
 
   i {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   i:hover {
@@ -75,22 +76,47 @@ $windy-day: #4F57AA;
 }
 
 #contact {
-  background-color: $windy-day;
+  background-color: $dark-motion;
+
 
   h2 {
     color: #fff;
   }
 
+  p, .btn {
+    font-size: 1.5em;
+  }
+
+  #email-me {
+    color: white;
+    text-decoration: underline;
+  }
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+  }
+
   ul {
     list-style-type: none;
+
+    li {
+      display: inline-block;
+
+      i {
+        color: white;
+        font-size: 48px
+      }
+      i:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+      }
+    }
   }
-  li {
-    display: inline-block;
-  }
-  i {
-    color: white;
-    font-size: 34px
-  }
+
 }
 
 
