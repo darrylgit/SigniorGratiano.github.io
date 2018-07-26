@@ -39,11 +39,17 @@ $windy-day: #4F57AA;
     width: 100%;
     height: 100%;
   }
-}
 
-#profile {
-  border-radius: 5px;
-  border: 2px $silver-lining solid;
+  #profile {
+    border-radius: 5px;
+    border: 2px $silver-lining solid;
+  }
+
+  p {
+    font-weight: 400;
+    //background-color: rgba(266, 266, 266, 0.5);
+    //padding: 5px;
+  }
 }
 
 #portfolio {
@@ -67,6 +73,16 @@ $windy-day: #4F57AA;
     -o-transform: scale(1.2);
   }
 }
+
+#contact {
+  background-color: $windy-day;
+
+  h2 {
+    color: #fff;
+  }
+
+}
+
 
 @media(max-width: 354.98px) {
   .navbar-brand h1 {

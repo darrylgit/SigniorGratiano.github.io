@@ -10,7 +10,7 @@
   <title>Daniel Wagener - Portfolio</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light fixed-top py-1">
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top py-1" id="main-nav">
     <div class="container">
       <a href="http://yahoo.com" class="navbar-brand">
         <h1 class="h2">Daniel Wagener</h1>
@@ -59,7 +59,7 @@
   </section>
 
   <!-- PORTFOLIO -->
-  <section id="portfolio" class="pt-5 pb-4">
+  <section id="portfolio" class="py-5">
     <div class="container">
       <div class="row text-center">
         <div class="col mx-auto">
@@ -176,6 +176,19 @@
     </div>
   </section>
 
+  <!-- CONTACT -->
+  <section id="contact" class="py-4 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col mx-auto">
+          <h2 class="display-4">Contact</h2>
+          <p>Email me at daniel.j.wagener@gmail.com <br> Or, </p>
+          <a href="#" class="btn btn-danger">Send Message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -188,6 +201,29 @@
     $('#year').text(new Date().getFullYear());
 
     $('[data-toggle="tooltip"]').tooltip();
+
+    //Init Scrollspy
+    $('body').scrollspy({target: '#main-nav'});
+
+    //Smooth Scrolling
+    $('#main-nav a').on('click', function(e) {
+      //Check for a hash value
+      if(this.hash !== ''){
+        //Prevent default behavior
+        e.preventDefault();
+
+        //Store hash
+        const hash = this.hash;
+
+        //Animate smooth scroll
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function() {
+          //Add hash to URL after scroll
+          window.location.hash = hash;
+        });
+      }
+    });
   </script>
 </body>
 </html>
