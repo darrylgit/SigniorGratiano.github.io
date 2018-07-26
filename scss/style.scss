@@ -26,7 +26,7 @@ $windy-day: #4F57AA;
   }
 }
 
-#showcase {
+#about {
   position: relative;
   background: url('../img/andaz.jpg');
   min-height: 550px;
@@ -40,19 +40,46 @@ $windy-day: #4F57AA;
     height: 100%;
   }
 }
+
 #profile {
   border-radius: 5px;
-  border: 3px $silver-lining solid;
+  border: 2px $silver-lining solid;
 }
 
-@media(max-width: 336.98px) {
-  .navbar-brand h2 {
+#portfolio {
+  h2 {
+    color: $dark-motion;
+  }
+
+  .card {
+    border-radius: 5px;
+    border: 1px $silver-lining solid;
+  }
+
+  i {
+    font-size: 24px;
+  }
+
+  i:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+}
+
+@media(max-width: 354.98px) {
+  .navbar-brand h1 {
     font-size: 1.3em;
+  }
+
+  .display-3 {
+    font-size: 3em;
   }
 }
 
 @media(max-width: 767.98px) {
-  #showcase {
+  #about {
     text-align: center;
   }
 }
