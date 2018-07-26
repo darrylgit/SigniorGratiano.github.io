@@ -1,1 +1,73 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfolio Page</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light fixed-top py-1">
+    <div class="container">
+      <a href="http://yahoo.com" class="navbar-brand">
+        <h2>Daniel Wagener</h3>
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SHOWCASE -->
+  <section id="showcase" class="py-5">
+    <div class="rain-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="display-3 mt-5 pt-5">Welcome!</h1>
+            <p class="lead">I'm Daniel, an ESL teacher currently learning Javascript-based
+              web development through the Free Code Camp Curriculum. Feel free to check
+              out what've made below and drop me a line.</p>
+            <div class="row">
+              <a href="#" class="btn btn-danger mx-auto mt-3">
+                Contact Now
+              </a>
+            </div>
+          </div>
+          <div class="col-md-5 d-none d-md-block mt-4 pt-5">
+            <img src="img/profile.jpg" alt="" class="img-fluid mt-5" id="profile">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script>
+    //Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
+</body>
+</html>
